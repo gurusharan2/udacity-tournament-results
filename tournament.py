@@ -127,4 +127,4 @@ def swissPairings():
 
     return result
 
-print swissPairings()
+
