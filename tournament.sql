@@ -14,8 +14,8 @@ create table Player(
 
 create table Matches(
     id serial primary key,
-    winner_id int,
-    looser_id int
+    winner_id int REFERENCES Player(id),
+    looser_id int REFERENCES Player(id)
     );
 
 create view Matches_won as
